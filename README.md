@@ -10,6 +10,7 @@ This is a supervised learning approach where the model is trained on labeled dat
 The model was built **from scratch**, without the use of external machine learning frameworks, to demonstrate the core principles of the Naive Bayes algorithm and its application to text classification.
 
 ### Project Structure
+```
 AI/ 
 │ 
 └── supervised-learning/ 
@@ -19,3 +20,4 @@ AI/
             ├── nb_spam_classifier.py 
             ├── sms_spam_data.csv 
             └── other_resources/
+```
