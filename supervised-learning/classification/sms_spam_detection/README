@@ -1,6 +1,6 @@
 ### Data Description
 
-The dataset used for training and testing in this project is from the [SMS Spam Collection v.1](http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/), a collection of SMS messages labeled as spam or ham (legitimate).
+The dataset used for training and testing in this project is from the [SMS Spam Collection v.1](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset), a collection of SMS messages labeled as spam or ham (legitimate).
 It contains over 5,000 messages that have been collected and curated for research on SMS spam filtering.
 
 ### Algorithm
@@ -28,4 +28,4 @@ It calculates the likelihood of a message being spam or ham based on word freque
 
 ### License
 
-This project uses the dataset from the SMS Spam Collection v.1. Please refer to the [license terms](http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/) for the dataset.
+This project uses the dataset from the SMS Spam Collection v.1. Please refer to the [license terms](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) for the dataset.
