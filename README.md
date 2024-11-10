@@ -13,11 +13,19 @@ The model was built **from scratch**, without the use of external machine learni
 ```
 AI/ 
 │ 
-└── supervised-learning/ 
+└── supervised-learning/
+    ├── cross_validation/
+        ├── README.md 
+        ├── KFoldXValidation.py
+        └── main.py 
     └── classification/ 
         └── sms_spam_detection/ 
             ├── README.md 
-            ├── nb_spam_classifier.py 
-            ├── sms_spam_data.csv 
-            └── other_resources/
+            ├── naive_bayes_klassifikation.py
+            └── main.py 
+        └── creditcard_fraud_detection/
+            ├── README.md
+            ├── logistic_regression.py
+            ├── main.py
+            └── main_with_hyperparametertuning.py
 ```
