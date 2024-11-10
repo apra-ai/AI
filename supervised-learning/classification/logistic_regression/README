@@ -1,0 +1,24 @@
+# Logistic Regression for Credit Card Fraud Detection
+
+This project implements a logistic regression model to classify fraudulent and legitimate transactions from the **[Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud/data)** on Kaggle. The dataset contains anonymized credit card transactions, with each transaction labeled as fraudulent or legitimate, which provides a great benchmark for supervised learning.
+
+## Dataset
+
+The dataset `creditcard.csv` contains transaction records with anonymized features and a binary target variable (`Class`) indicating whether a transaction is fraudulent (`1`) or legitimate (`0`). The dataset is highly imbalanced, with only a small percentage of transactions labeled as fraud.
+
+Dataset link: [Credit Card Fraud Detection on Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud/data).
+
+### Logistic Regression Model
+
+The logistic regression model is implemented from scratch using gradient descent for optimization. The model has the following hyperparameters:
+- **Learning Rate:** Controls the step size for parameter updates.
+- **Max Iterations:** Specifies the maximum number of iterations for gradient descent.
+- **Error Threshold (err):** Defines the convergence tolerance. If the gradient's mean squared error is below this threshold, training stops.
+
+### Training and Validation
+
+The dataset is split into training, validation, and test sets to tune the model's hyperparameters. Cross-validation helps ensure the model generalizes well to unseen data, and the accuracy metric is used to evaluate model performance.
+
+### Hyperparameter Tuning
+
+The model is trained using different combinations of hyperparameters, and the combination with the best accuracy on the validation set is selected.
