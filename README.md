@@ -19,13 +19,13 @@ AI/
         ├── KFoldXValidation.py
         └── main.py 
     └── classification/ 
-        └── sms_spam_detection/ 
+        └── naive_bayes/ 
             ├── README.md 
             ├── naive_bayes_klassifikation.py
             └── main.py 
-        └── creditcard_fraud_detection/
+        └── logistic_regression/
             ├── README.md
-            ├── logistic_regression.py
+            ├── LogisticRegression.py
             ├── main.py
             └── main_with_hyperparametertuning.py
 ```
