@@ -1,0 +1,31 @@
+### Data Description
+
+The dataset used for training and testing in this project is from the [SMS Spam Collection v.1](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset), a collection of SMS messages labeled as spam or ham (legitimate).
+It contains over 5,000 messages that have been collected and curated for research on SMS spam filtering.
+
+### Algorithm
+
+The Naive Bayes classifier is used for this project due to its efficiency and simplicity when working with text classification tasks.
+It calculates the likelihood of a message being spam or ham based on word frequencies in the dataset, applying Bayes' theorem.
+
+### Key Features
+- **Preprocessing:** Text data cleaning and transformation to prepare for model training.
+- **Naive Bayes Classification:** Implementation of the Multinomial Naive Bayes model for SMS classification.
+- **Prediction:** Use of the trained model to classify new SMS messages as spam or ham.
+
+### How to Use
+
+1. Clone the repository:
+```git clone https://github.com/your-username/AI.git```
+
+2. Navigate to the SMS Spam Detection directory:
+```cd AI/supervised-learning/classification/sms_spam_detection```
+
+3. Run the Naive Bayes classifier:
+```python nb_spam_classifier.py```
+
+4. The classifier will read the `sms_spam_data.csv` file, train the Naive Bayes model, and then predict the class of test messages.
+
+### License
+
+This project uses the dataset from the SMS Spam Collection v.1. Please refer to the [license terms](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) for the dataset.

@@ -1,0 +1,26 @@
+# Feedforward Neural Network Implementation
+
+This project demonstrates the creation of a **Feedforward Neural Network (FNN)** from scratch, implemented purely with **NumPy**, without relying on external libraries for machine learning. The goal of this project is to provide a simple yet comprehensive understanding of the foundational concepts behind neural networks.
+
+## Overview
+
+The FNN in this project was deliberately designed with a **single hidden layer** to keep the implementation straightforward while still being sufficiently complex to grasp the underlying principles of feedforward neural networks. The model uses the **ReLU activation function** in the hidden layer and is optimized using **backpropagation with gradient descent**.
+
+## Dataset
+
+The [Wine Quality Dataset](https://www.kaggle.com/datasets/yasserh/wine-quality-dataset) was used for this project. This dataset contains information about physicochemical properties of wines (e.g., pH, alcohol content) and their quality ratings. The network was trained to predict wine quality based on these features.
+
+## Features
+
+- **Custom Neural Network Architecture:** 
+  - One input layer.
+  - One hidden layer.
+  - One output layer for regression tasks.
+
+- **Implemented Functions:**
+  - **Activation Function:** ReLU (Rectified Linear Unit).
+  - **Loss Function:** Mean Squared Error for regression.
+  - **Weight and Bias Initialization:** Random initialization.
+  - **Optimization:** Gradient descent for weight and bias updates.
+
+- **Predictive Task:** Regression for predicting wine quality.

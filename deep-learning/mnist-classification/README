@@ -1,0 +1,24 @@
+# MNIST Classification with Feedforward Neural Network (FNN)
+This project demonstrates how to classify handwritten digits from the MNIST dataset using a Feedforward Neural Network (FNN) in PyTorch.
+
+## Overview
+The goal of this project is to implement a simple neural network that can classify digits from the MNIST dataset. The model is a fully connected feedforward neural network, consisting of an input layer, two hidden layers, and an output layer. The network is trained using the CrossEntropy loss function and optimized using the Adam optimizer.
+
+## Dataset
+The project uses the MNIST dataset, which consists of 28x28 pixel grayscale images of handwritten digits (0-9). The dataset is split into 60,000 training images and 10,000 test images. The dataset is automatically downloaded using the torchvision library.
+
+## Model Architecture
+The model used in this project is a simple Feedforward Neural Network with the following layers:
+Input Layer: A vector of size 784 (28x28 pixels)
+Hidden Layer 1: 512 units with ReLU activation
+Hidden Layer 2: 128 units with ReLU activation
+Output Layer: 10 units (one for each digit from 0 to 9) with no activation function
+
+## Training
+The network is trained using the following steps:
+Loss Function: CrossEntropyLoss is used for multi-class classification.
+Optimizer: The Adam optimizer is used to minimize the loss function.
+Epochs: The model is trained for 15 epochs.
+
+## Evaluation
+The accuracy of the model is evaluated on the test dataset. After training, the model predicts the digits from the test images and the accuracy is calculated using the accuracy_score from sklearn.metrics.

@@ -1,0 +1,14 @@
+### Data Description
+
+The dataset used for training and testing in this project is from the [SMS Spam Collection v.1](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset), a collection of SMS messages labeled as spam or ham (legitimate).
+It contains over 5,000 messages that have been collected and curated for research on SMS spam filtering.
+
+### Key Features
+
+- **K-Fold Cross-Validation**: Automatically splits the dataset into training and testing subsets, helping to mitigate overfitting and provide a more reliable estimate of model performance.
+- **Naive Bayes Classifier**: Uses `GaussianNB` from `sklearn` for classification tasks.
+- **Majority Voting**: Combines predictions from multiple models (trained on each fold) using a majority vote.
+
+### License
+
+This project uses the dataset from the SMS Spam Collection v.1. Please refer to the [license terms](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) for the dataset.
