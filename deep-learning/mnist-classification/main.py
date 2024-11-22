@@ -5,14 +5,19 @@ from torch.utils.data import DataLoader
 import torch.optim as optim
 from sklearn.metrics import accuracy_score
 
+#Hyperparameters
+learning_rate = 0.001
+epochs = 20            # Number epochs/max iterations
+batch_size = 64
+
 # Load/Download MNIST-Data and transform into tensor
 transform = transforms.ToTensor()
 train_dataset = datasets.MNIST(root='./data', train=True, download=True, transform=transform)
 test_dataset = datasets.MNIST(root='./data', train=False, download=True, transform=transform)
 
 # Make batches out of MNIST-data
-train_loader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=64, shuffle=True)
-test_loader = torch.utils.data.DataLoader(dataset=test_dataset, batch_size=64, shuffle=False)
+train_loader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True)
+test_loader = torch.utils.data.DataLoader(dataset=test_dataset, batch_size=batch_size, shuffle=False)
 
 class FNN(nn.Module):
     def __init__(self):
@@ -39,10 +44,7 @@ model = FNN()
 
 # Loss funktion CrossEntropy for Classifikation and optimizer
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(), lr=0.001)
-
-# Number epochs/max iterations
-epochs = 15
+optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
 # Loop to train model
 for epoch in range(epochs):
